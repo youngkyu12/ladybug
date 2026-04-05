@@ -236,26 +236,37 @@ Smartphone Game Programming Lecture Term Project
 * UI 화면: 5종
   * 메인메뉴 화면
   <img src="sshots/Game_Start_UI.png" width="25%" Height="25%">
+  ---
   * 인게임 화면
   <img src="sshots/In_Game_UI.png" width="25%" Height="25%">
+  ---
   * 일시정지 화면
   <img src="sshots/Game_Pause_UI.png" width="25%" Height="25%">
+  ---
   * 결과 화면
   <img src="sshots/Game_Over_UI.png" width="25%" Height="25%">
+  ---
   * 다시시작 화면
   <img src="sshots/Game_Retry_UI.png" width="25%" Height="25%">
+  ---
   * 아이템 화면
-  <img src="sshots/Item_UI.png" width="25%" Height="25%">
+  <img src="sshots/Item_UI.png" width="50%" Height="50%">
+  ---
   * 도움말 화면
-  <img src="sshots/Help_UI.png" width="25%" Height="25%">
+  <img src="sshots/Help_UI.png" width="50%" Height="50%">
+  ---
   * 설정 화면
   <img src="sshots/Game_Setting_UI.png" width="25%" Height="25%">
+  ---
     * 스피드 설정 화면
     <img src="sshots/Speed_Setting_UI.png" width="25%" Height="25%">
+    ---
     * 기울기 설정 화면
     <img src="sshots/Slope_Setting_UI.png" width="25%" Height="25%">
+    ---
   * 점수 저장 화면
-  <img src="sshots/Score_title_UI.png" width="25%" Height="25%">
+  <img src="sshots/Score_title_UI.png" width="50%" Height="50%">
+  ---
   
 * 사운드:
   * 배경음 1개: 게임 시작
