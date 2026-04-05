@@ -15,7 +15,7 @@ Smartphone Game Programming Lecture Term Project
 * Platform: Android
 * Input: 자이로스코프 센서 기반 조작
 
-<img src="sshots/Game_Start.png">
+<img src="sshots/Game_Start_UI.png" width="25%" Height="25%">
 
 ---
 
@@ -72,11 +72,11 @@ Smartphone Game Programming Lecture Term Project
 ### 구현 대상 요소
 * 플레이어 캐릭터: 1종
 
-<img src="sshots/Player.png">
+<img src="sshots/Player.png" width="25%" Height="25%">
 
 * 적 캐릭터: 1종
 
-<img src="sshots/Enemy.png">
+<img src="sshots/Enemy.png" width="25%" Height="25%">
 
 * 아이템 종류: 8종 구현
 꽃잎 폭탄
@@ -223,31 +223,31 @@ Smartphone Game Programming Lecture Term Project
 6	8		55
 
 * 배경 화면: 1종
-<img src="sshots/Background.png">
+<img src="sshots/Background.png" width="25%" Height="25%">
 
 * UI 화면: 5종
   * 메인메뉴 화면
-  <img src="sshots/Game_Start_UI.png">
+  <img src="sshots/Game_Start_UI.png" width="25%" Height="25%">
   * 인게임 화면
-  <img src="sshots/In_Game_UI.png">
+  <img src="sshots/In_Game_UI.png" width="25%" Height="25%">
   * 일시정지 화면
-  <img src="sshots/Game_Pause_UI.png">
+  <img src="sshots/Game_Pause_UI.png" width="25%" Height="25%">
   * 결과 화면
-  <img src="sshots/Game_Over_UI.png">
+  <img src="sshots/Game_Over_UI.png" width="25%" Height="25%">
   * 다시시작 화면
-  <img src="sshots/Game_Retry_UI.png">
+  <img src="sshots/Game_Retry_UI.png" width="25%" Height="25%">
   * 아이템 화면
-  <img src="sshots/Item_UI.png">
+  <img src="sshots/Item_UI.png" width="25%" Height="25%">
   * 도움말 화면
-  <img src="sshots/Help_UI.png">
+  <img src="sshots/Help_UI.png" width="25%" Height="25%">
   * 설정 화면
-  <img src="sshots/Game_Setting_UI.png">
+  <img src="sshots/Game_Setting_UI.png" width="25%" Height="25%">
     * 스피드 설정 화면
-    <img src="sshots/Speed_Setting_UI.png">
+    <img src="sshots/Speed_Setting_UI.png" width="25%" Height="25%">
     * 기울기 설정 화면
-    <img src="sshots/Slope_Setting_UI.png">
+    <img src="sshots/Slope_Setting_UI.png" width="25%" Height="25%">
   * 점수 저장 화면
-  <img src="sshots/Score_title_UI.png">
+  <img src="sshots/Score_title_UI.png" width="25%" Height="25%">
   
 * 사운드:
   * 배경음 1개: 게임 시작
