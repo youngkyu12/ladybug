@@ -238,7 +238,7 @@ Smartphone Game Programming Lecture Term Project
 
 ---
 
-* UI 화면
+* UI 화면: 11종
 
   * 메인메뉴 화면  
   <p align="center">
