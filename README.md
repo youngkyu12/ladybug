@@ -215,12 +215,11 @@ Smartphone Game Programming Lecture Term Project
 * 지속 시간이 종료될 때 코스모스가 생성된 방향으로 전진합니다.
 * 레벨별 코스모스 생성 위치는 다음과 같다.
 ```text
-		    1
-    1		    1
-6     레이디	   5
-	     버그
-    4		    2
-	    	3
+플레이어: 0
+
+1 1 1
+6 0 5
+4 3 2
 ```
 * 레벨	생성 개수	지속 시간
 *  1      3 		  30
@@ -229,44 +228,74 @@ Smartphone Game Programming Lecture Term Project
 *  4      6	      45
 *  5      7	      50
 *  6      8	      55
+---
 
-* 배경 화면: 1종
-<img src="sshots/Background.png" width="25%" Height="25%">
+* 배경 화면: 1종  
 
-* UI 화면: 5종
-  * 메인메뉴 화면
-  <img src="sshots/Game_Start_UI.png" width="25%" Height="25%">
-  ---
-  * 인게임 화면
-  <img src="sshots/In_Game_UI.png" width="25%" Height="25%">
-  ---
-  * 일시정지 화면
-  <img src="sshots/Game_Pause_UI.png" width="25%" Height="25%">
-  ---
-  * 결과 화면
-  <img src="sshots/Game_Over_UI.png" width="25%" Height="25%">
-  ---
-  * 다시시작 화면
-  <img src="sshots/Game_Retry_UI.png" width="25%" Height="25%">
-  ---
-  * 아이템 화면
-  <img src="sshots/Item_UI.png" width="50%" Height="50%">
-  ---
-  * 도움말 화면
-  <img src="sshots/Help_UI.png" width="50%" Height="50%">
-  ---
-  * 설정 화면
-  <img src="sshots/Game_Setting_UI.png" width="25%" Height="25%">
-  ---
-    * 스피드 설정 화면
-    <img src="sshots/Speed_Setting_UI.png" width="25%" Height="25%">
-    ---
-    * 기울기 설정 화면
-    <img src="sshots/Slope_Setting_UI.png" width="25%" Height="25%">
-    ---
-  * 점수 저장 화면
-  <img src="sshots/Score_title_UI.png" width="50%" Height="50%">
-  ---
+<p align="center">
+  <img src="sshots/Background.png" width="25%" Height="25%">
+</p>
+
+---
+
+* UI 화면
+
+  * 메인메뉴 화면  
+  <p align="center">
+    <img src="sshots/Game_Start_UI.png" width="25%" Height="25%">
+  </p>
+
+  * 인게임 화면  
+  <p align="center">
+    <img src="sshots/In_Game_UI.png" width="25%" Height="25%">
+  </p>
+
+  * 일시정지 화면  
+  <p align="center">
+    <img src="sshots/Game_Pause_UI.png" width="25%" Height="25%">
+  </p>
+
+  * 결과 화면  
+  <p align="center">
+    <img src="sshots/Game_Over_UI.png" width="25%" Height="25%">
+  </p>
+
+  * 다시시작 화면  
+  <p align="center">
+    <img src="sshots/Game_Retry_UI.png" width="25%" Height="25%">
+  </p>
+
+  * 아이템 화면  
+  <p align="center">
+    <img src="sshots/Item_UI.png" width="50%" Height="50%">
+  </p>
+
+  * 도움말 화면  
+  <p align="center">
+    <img src="sshots/Help_UI.png" width="50%" Height="50%">
+  </p>
+
+  * 설정 화면  
+  <p align="center">
+    <img src="sshots/Game_Setting_UI.png" width="25%" Height="25%">
+  </p>
+
+    * 스피드 설정 화면  
+    <p align="center">
+      <img src="sshots/Speed_Setting_UI.png" width="25% "Height="25%">
+    </p>
+
+    * 기울기 설정 화면  
+    <p align="center">
+      <img src="sshots/Slope_Setting_UI.png" width="25%" Height="25%">
+    </p>
+
+  * 점수 저장 화면  
+  <p align="center">
+    <img src="sshots/Score_title_UI.png" width="50%" Height="50%">
+  </p>
+
+---
   
 * 사운드:
   * 배경음 1개: 게임 시작
