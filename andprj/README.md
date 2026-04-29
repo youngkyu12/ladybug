@@ -38,7 +38,7 @@
 ## a2dg 연결
 
 - [ ] `ladybug` 에 `a2dg` 모듈 연결
-  - [ ] `ladybug` 에서 `a2dg` 모듈 복사/연결
+  - [x] `CookieRun` 에서 `a2dg` 모듈 복사/연결
   - [ ] gradle 파일에서 `a2dg` 사용 설정 (`settings.gradle.kts`)
   - [ ] `versions.toml` 의존성 항목 보강
   - [ ] `app` 모듈 의존성 연결 (`build.gradle.kts` / `:app`)
@@ -106,3 +106,4 @@
 
 - 이 문서는 Android 2D 게임 개발 수업에서 교수님의 체크리스트 항목을 바탕으로 구성했다.
 - 상황에 따라 항목이 추가/삭제될 수 있다.
+- 수업 진도에 따라 a2dg 폴더가 계속해서 업데이트 될 예정이다.
