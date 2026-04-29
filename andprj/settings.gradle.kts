@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ladybug"
 include(":app")
- 
+include(":a2dg")
