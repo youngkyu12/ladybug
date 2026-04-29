@@ -10,6 +10,11 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.example.ladybug"
         minSdk = 24

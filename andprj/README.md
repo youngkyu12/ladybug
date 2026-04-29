@@ -7,8 +7,8 @@
 
 - [x] 프로젝트 생성
 - [ ] 기본 `MainActivity` 생성
-- [ ] `ViewBinding` 적용
-- [ ] `buildConfig` 생성 활성화
+- [x] `ViewBinding` 적용
+- [x] `buildConfig` 생성 활성화
 
 ## Activity / Scene 구성
 - `MainActivity` : 게임 타이틀이자 옵션 선택 용도로 사용
