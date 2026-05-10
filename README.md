@@ -6,7 +6,7 @@
 |-----------------------|------------------------------------------------------------------------------------------------------------------|
 | 프로젝트 제목               | **Ladybug**                                                                           |
 | Git Repository        | [youngkyu12/ladybug](https://github.com/youngkyu12/ladybug)                                                      |
-| 2차 발표 영상              | [2차 발표 영상](TODO_2차_발표_영상_URL)                                                                                    |
+| 2차 발표 영상              | [2차 발표 영상](https://youtu.be/3P9kdHmcqTU)                                                                                    |
 | 1차 발표 영상              | [1차 발표 영상](https://youtu.be/jJiFIIa5MSA)                                                                                    |
 | 1차 발표 때 버전의 README.md | [1차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/d4902d7634d96e7a3af38170f36b83d7a12ad3c0/README.md) |
 | 개발 계획 체크 리스트          | [개발 계획 체크리스트](https://github.com/youngkyu12/ladybug/blob/main/andprj/README.md)                                  |
