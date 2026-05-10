@@ -4,6 +4,7 @@ import com.example.ladybug.BuildConfig
 import kr.ac.tukorea.ge.spgp2026.a2dg.activity.BaseGameActivity
 import kr.ac.tukorea.ge.spgp2026.a2dg.scene.Scene
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
+import com.example.ladybug.game.main.MainScene
 
 class LadyBugActivity : BaseGameActivity() {
     override val drawsDebugGrid = BuildConfig.DEBUG
@@ -11,7 +12,6 @@ class LadyBugActivity : BaseGameActivity() {
     override val drawsFpsGraph = BuildConfig.DEBUG
 
     override fun createRootScene(gctx: GameContext): Scene {
-        return object : Scene(gctx) {
-        }
+        return MainScene(gctx)
     }
 }
