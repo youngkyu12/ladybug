@@ -66,3 +66,9 @@
 아래 이미지는 GitHub 저장소의 commit 활동을 보여주는 자료이다.
 
 <img src="sshots/github-insights-commits.png">
+
+---
+<img src="sshots/play_title.png">
+
+---
+<img src="sshots/play_game.png">
