@@ -30,7 +30,7 @@
 ## Activity / App 시작
 
 - [ ] 타이틀 화면(`MainActivity`) 구성
-- [ ] 실제 게임 Activity(`LadybugActivity`) 추가 (layout xml 없이)
+- [x] 실제 게임 Activity(`LadybugActivity`) 추가 (layout xml 없이)
 - [ ] `MainActivity` 에서 `LadybugActivity` 실행
   - [ ] Debug Build 시 1초 후 자동실행
 - [ ] 게임 Activity 를 landscape mode 로 고정
