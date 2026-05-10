@@ -6,7 +6,7 @@
 현재 상태:
 
 - [x] 프로젝트 생성
-- [ ] 기본 `MainActivity` 생성
+- [x] 기본 `MainActivity` 생성
 - [x] `ViewBinding` 적용
 - [x] `buildConfig` 생성 활성화
 
@@ -29,10 +29,10 @@
 
 ## Activity / App 시작
 
-- [ ] 타이틀 화면(`MainActivity`) 구성
+- [x] 타이틀 화면(`MainActivity`) 구성
 - [x] 실제 게임 Activity(`LadybugActivity`) 추가 (layout xml 없이)
-- [ ] `MainActivity` 에서 `LadybugActivity` 실행
-  - [ ] Debug Build 시 1초 후 자동실행
+- [x] `MainActivity` 에서 `LadybugActivity` 실행
+  - [x] Debug Build 시 1초 후 자동실행
 - [ ] 게임 Activity 를 landscape mode 로 고정
 
 ## a2dg 연결

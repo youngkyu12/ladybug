@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ladybug</string>
+    <string name="title_background">Title_Background</string>
+    <string name="start_button">Start_Button</string>
 </resources>
