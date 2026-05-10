@@ -42,11 +42,11 @@
   - [x] gradle 파일에서 `a2dg` 사용 설정 (`settings.gradle.kts`)
   - [x] `versions.toml` 의존성 항목 보강
   - [x] `app` 모듈 의존성 연결 (`build.gradle.kts` / `:app`)
-- [ ] `ladybugActivity` 가 `GameActivity`/`BaseGameActivity` 계열을 상속
-- [ ] Activity 들을 `.app` package 로 옮김
-- [ ] `MainScene` 생성 및 root scene push
-- [ ] debug build 일 때만 debug 정보가 보이게 설정
-- [ ] debug build 에서 Grid 표시
+- [x] `ladybugActivity` 가 `GameActivity`/`BaseGameActivity` 계열을 상속
+- [x] Activity 들을 `.app` package 로 옮김
+- [x] `MainScene` 생성 및 root scene push
+- [x] debug build 일 때만 debug 정보가 보이게 설정
+- [x] debug build 에서 Grid 표시
 - [ ] `PauseScene` transparent scene 처리(`isTransparent` / `popAll` 포함)
 
 ## MainScene 배경 및 화면 좌표계 설정
