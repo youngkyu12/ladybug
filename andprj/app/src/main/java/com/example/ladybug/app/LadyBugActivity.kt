@@ -1,5 +1,6 @@
-package com.example.ladybug
+package com.example.ladybug.app
 
+import com.example.ladybug.BuildConfig
 import kr.ac.tukorea.ge.spgp2026.a2dg.activity.BaseGameActivity
 import kr.ac.tukorea.ge.spgp2026.a2dg.scene.Scene
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext

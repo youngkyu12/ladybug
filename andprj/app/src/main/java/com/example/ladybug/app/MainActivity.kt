@@ -1,4 +1,4 @@
-package com.example.ladybug
+package com.example.ladybug.app
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ladybug.BuildConfig
 import com.example.ladybug.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
