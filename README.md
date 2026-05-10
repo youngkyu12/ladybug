@@ -80,6 +80,7 @@
 
 <img src="sshots/github-insights-commits.png">
 
+## 4. Play
 ---
 <img src="sshots/play_title.png">
 
