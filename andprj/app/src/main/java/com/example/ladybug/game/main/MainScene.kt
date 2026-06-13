@@ -14,17 +14,20 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
     // MainScene에서 컨트롤러를 하나 만든다.
     val gyroscopeController = GyroscopeController(gctx)
     val player = Player(gctx, gyroscopeController)
+    private val enemyGenerator = EnemyGenerator(gctx, player)
 
     enum class Layer {
         BACKGROUND,
         PLAYER,
         BULLET,
         ENEMY,
+        CONTROLLER,
     }
 
-    override val world = World(arrayOf(Layer.BACKGROUND, Layer.PLAYER, Layer.BULLET, Layer.ENEMY)).apply {
+    override val world = World(Layer.entries.toTypedArray()).apply {
         add(VertScrollBackground(gctx, R.mipmap.game_background, -100f), Layer.BACKGROUND)
         add(player, Layer.PLAYER)
+        add(enemyGenerator, Layer.CONTROLLER)
     }
 
     override fun onEnter() {
@@ -41,15 +44,5 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
 
     override fun onResume() {
         gyroscopeController.start()
-    }
-
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        if (event.actionMasked == MotionEvent.ACTION_DOWN) {
-            val pt = gctx.metrics.fromScreen(event.x, event.y)
-            val enemyY = Enemy.ENEMY_HEIGHT / 2f
-            val enemy = Enemy(gctx, pt.x, enemyY)
-            world.add(enemy, Layer.ENEMY)
-        }
-        return true
     }
 }

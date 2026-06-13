@@ -33,7 +33,7 @@
 - [x] 실제 게임 Activity(`LadybugActivity`) 추가 (layout xml 없이)
 - [x] `MainActivity` 에서 `LadybugActivity` 실행
   - [x] Debug Build 시 1초 후 자동실행
-- [ ] 게임 Activity 를 landscape mode 로 고정
+- [X] 게임 Activity 를 landscape mode 로 고정
 
 ## a2dg 연결
 
@@ -50,7 +50,7 @@
 - [ ] `PauseScene` transparent scene 처리(`isTransparent` / `popAll` 포함)
 
 ## MainScene 배경 및 화면 좌표계 설정
-- [ ] 가상좌표계 세로방향으로 설정
+- [X] 가상좌표계 세로방향으로 설정
 
 ## Player / 입력 / 이동
 
@@ -68,11 +68,11 @@
 
 ## Enemy / 생성 규칙
 
-- [ ] `Enemy` 클래스 추가
-- [ ] `Enemy` 생성 및 배치
-- [ ] 화면 위에서 생성되어 아래로 지나가게 처리
-- [ ] 화면 밖으로 나가면 삭제
-- [ ] `EnemyGenerator` 같은 생성 담당 객체 도입
+- [X] `Enemy` 클래스 추가
+- [X] `Enemy` 생성 및 배치
+- [X] 화면 위에서 생성되어 아래로 지나가게 처리
+- [X] 화면 밖으로 나가면 삭제
+- [X] `EnemyGenerator` 같은 생성 담당 객체 도입
 - [ ] Timer 에 따른 생성 규칙 추가
 
 ## Map / 아이템
