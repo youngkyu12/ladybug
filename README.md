@@ -1,4 +1,4 @@
-# 🐞 Ladybug - 텀 프로젝트 2차 발표
+# 🐞 Ladybug - 텀 프로젝트 3차 발표
 
 ## 📌 제출 정보
 
@@ -11,6 +11,7 @@
 | 1차 발표 영상              | [1차 발표 영상](https://youtu.be/jJiFIIa5MSA)                                                                         |
 | 1차 발표 때 버전의 README.md | [1차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/d4902d7634d96e7a3af38170f36b83d7a12ad3c0/README.md) |
 | 2차 발표 때 버전의 README.md | [2차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/92d02a080c0995b7c281f61397aa2bb031cf9eed/README.md) |
+| 3차 발표 때 버전의 README.md | [3차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/034961e4af14360e2515fc40125384bb0c12f12f/README.md) |
 | 개발 계획 체크 리스트          | [개발 계획 체크리스트](https://github.com/youngkyu12/ladybug/blob/main/andprj/README.md)                                  |
 
 ---
