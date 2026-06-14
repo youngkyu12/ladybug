@@ -47,7 +47,7 @@
 - [x] `MainScene` 생성 및 root scene push
 - [x] debug build 일 때만 debug 정보가 보이게 설정
 - [x] debug build 에서 Grid 표시
-- [ ] `PauseScene` transparent scene 처리(`isTransparent` / `popAll` 포함)
+- [x] `PauseScene` transparent scene 처리(`isTransparent` / `popAll` 포함)
 
 ## MainScene 배경 및 화면 좌표계 설정
 - [X] 가상좌표계 세로방향으로 설정
@@ -63,7 +63,7 @@
 
 - [X] (추가) `Bullet` 클래스 추가
 - [ ] 특정 아이템 획득 시 `Bullet` 발사
-- [ ] 총알 시작 위치를 플레이어 중심보다 자연스러운 위치로 보정
+- [x] 총알 시작 위치를 플레이어 중심보다 자연스러운 위치로 보정
 - [X] 총알이 화면 밖으로 나가면 삭제
 
 ## Enemy / 생성 규칙
@@ -79,26 +79,27 @@
 
 - [X] 수직 스크롤 배경(`VertScrollBackground`) 적용
 - [ ] 8종 아이템 추가 및 재활용 처리
-- [ ] 게임 진행 상황 `Timer` 표시
-- [ ] 게임 진행 상황 `Score` 표시
+- [X] 게임 진행 상황 `Timer` 표시
+- [X] 게임 진행 상황 `Score` 표시
 
 ## 충돌 / 판정
 
-- [ ] Bullet 과 Enemy 충돌 처리
+- [X] Bullet 과 Enemy 충돌 처리
   - [X] `CollisionChecker` 를 두고 `BULLET`, `ENEMY` 를 순회하기 시작
   - [X] `Bullet`, `Enemy` 가 충돌 범위를 제공
   - [X] 충돌이 있는지 실제로 체크
   - [X] 충돌 시 `Bullet` 삭제
   - [X] 충돌 시 `Enemy` 삭제
-  - [ ] `dstRect` 와 `collisionRect` 는 다를 수 있음
-  - [ ] `IBoxCollidable` 적용
+  - [x] `IBoxCollidable` 적용
+- [X] Player 와 Enemy 충돌 처리
 
 ## Game Loop / 상태 전환
 
-- [ ] 일시정지/재개 처리
-- [ ] `Back` 버튼 처리
-- [ ] `Pause` 버튼 추가 및 입력 처리
-- [ ] `PausedScene` push/pop 으로 일시정지 UI 구성
+- [X] 일시정지/재개 처리
+- [X] `Back` 버튼 처리
+- [X] `Pause` 입력 처리
+- [X] `PausedScene` push/pop 으로 일시정지 UI 구성
+- [X] `GameOverScene` 처리
 
 ## 이펙트 / 마무리
 
