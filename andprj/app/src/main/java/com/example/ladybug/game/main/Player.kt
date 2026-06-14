@@ -61,7 +61,7 @@ class Player(
 
     private fun fireBullet() {
         val scene = gctx.scene as? MainScene ?: return
-        val bullet = Bullet(gctx, x, y)
+        val bullet = Bullet.get(gctx, x, y - BULLET_OFFSET)
         scene.world.add(bullet, MainScene.Layer.BULLET)
     }
 
@@ -72,5 +72,6 @@ class Player(
 
     companion object {
         const val COLLISION_INSET = 40f
+        const val BULLET_OFFSET = 80f
     }
 }
