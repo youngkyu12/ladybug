@@ -4,6 +4,7 @@ import com.example.ladybug.R
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
 import android.graphics.RectF
+import kr.ac.tukorea.ge.spgp2026.a2dg.objects.IBoxCollidable
 
 class Enemy(
     gctx: GameContext,
@@ -13,7 +14,7 @@ class Enemy(
     private val dy: Float,
     val level: Int = 1,
     private val speed: Float = SPEED
-    ) : Sprite(gctx, R.mipmap.enemy) {
+    ) : Sprite(gctx, R.mipmap.enemy), IBoxCollidable {
     private val _collisionRect = RectF()
     override var width = ENEMY_WIDTH
     override var height = ENEMY_HEIGHT
@@ -25,7 +26,7 @@ class Enemy(
         updateCollisionRect()
     }
 
-    val collisionRect: RectF
+    override val collisionRect: RectF
         get()  = _collisionRect
 
     override fun update(gctx: GameContext) {

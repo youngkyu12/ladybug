@@ -4,12 +4,13 @@ import com.example.ladybug.R
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
 import android.graphics.RectF
+import kr.ac.tukorea.ge.spgp2026.a2dg.objects.IBoxCollidable
 
 class Bullet(
     gctx: GameContext,
     startX: Float,
     startY: Float,
-) : Sprite(gctx, R.mipmap.bullet) {
+) : Sprite(gctx, R.mipmap.bullet), IBoxCollidable {
     private val _collisionRect = RectF()
     override var width = BULLET_WIDTH
     override var height = BULLET_HEIGHT
@@ -21,7 +22,7 @@ class Bullet(
         updateCollisionRect()
     }
 
-    val collisionRect: RectF
+    override val collisionRect: RectF
         get() = _collisionRect
 
     override fun update(gctx: GameContext) {
