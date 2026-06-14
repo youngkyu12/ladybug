@@ -13,6 +13,8 @@ class EnemyGenerator(
     private var waveTime = WAVE_INTERVAL // 다음 웨이브까지 남은 시간
     private var spawnTime = 0f  // 웨이브 도중 다음 적 1마리 생성까지 남은 시간
     private var remainingEnemies = 0    // 현재 웨이브에서 앞으로 몇 마리를 더 만들지 저장
+    private var nextLevel = 1
+    private var wave = 0
 
     override fun update(gctx: GameContext) {
         // 먼저 현재 웨이브가 진행 중인지 본다.
@@ -20,7 +22,7 @@ class EnemyGenerator(
             updateWave(gctx)
             return
         }
-
+        wave++
         waveTime -= gctx.frameTime
         // 시간이 다 지나면 웨이브를 시작한다.
         if (waveTime <= 0f) {
@@ -71,10 +73,13 @@ class EnemyGenerator(
         val dx = vx / distance
         val dy = vy / distance
 
+        val speed = Enemy.SPEED + (wave - 1) * SPEED_STEP
+
         scene.world.add(
-            Enemy(gctx, x, y, dx, dy),
+            Enemy(gctx, x, y, dx, dy, level = nextLevel, speed = speed),
             MainScene.Layer.ENEMY
         )
+        nextLevel = if (nextLevel == Enemy.MAX_LEVEL_COUNT) 1 else nextLevel + 1
     }
 
     override fun draw(canvas: Canvas) {
@@ -86,5 +91,6 @@ class EnemyGenerator(
         const val WAVE_INTERVAL = 3f
         const val SPAWN_INTERVAL = 0.5f
         const val COUNT_PER_WAVE = 5
+        const val SPEED_STEP = 0.5f
     }
 }

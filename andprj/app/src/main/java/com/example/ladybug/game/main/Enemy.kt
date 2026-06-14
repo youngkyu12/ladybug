@@ -11,6 +11,8 @@ class Enemy(
     y: Float,
     private val dx: Float,
     private val dy: Float,
+    level: Int = 1,
+    private val speed: Float = SPEED
     ) : Sprite(gctx, R.mipmap.enemy) {
     override var width = ENEMY_WIDTH
     override var height = ENEMY_HEIGHT
@@ -23,8 +25,8 @@ class Enemy(
 
 
     override fun update(gctx: GameContext) {
-        x += dx * SPEED * gctx.frameTime
-        y += dy * SPEED * gctx.frameTime
+        x += dx * speed * gctx.frameTime
+        y += dy * speed * gctx.frameTime
 
         if (y - height / 2f > gctx.metrics.height) {
             val scene = gctx.scene as? MainScene ?: return
@@ -39,5 +41,6 @@ class Enemy(
         const val ENEMY_WIDTH = 180f
         const val ENEMY_HEIGHT = 180f
         const val SPEED = 240f
+        const val MAX_LEVEL_COUNT = 20
     }
 }
