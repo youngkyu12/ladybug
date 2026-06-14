@@ -15,7 +15,7 @@ class Enemy(
     val level: Int = 1,
     private val speed: Float = SPEED
     ) : Sprite(gctx, R.mipmap.enemy), IBoxCollidable {
-    private val _collisionRect = RectF()
+    override val collisionRect = RectF()
     override var width = ENEMY_WIDTH
     override var height = ENEMY_HEIGHT
     override var x = x
@@ -25,9 +25,6 @@ class Enemy(
         syncDstRect()
         updateCollisionRect()
     }
-
-    override val collisionRect: RectF
-        get()  = _collisionRect
 
     override fun update(gctx: GameContext) {
         x += dx * speed * gctx.frameTime
@@ -44,8 +41,8 @@ class Enemy(
     }
 
     private fun updateCollisionRect() {
-        _collisionRect.set(dstRect)
-        _collisionRect.inset(COLLISION_INSET, COLLISION_INSET)
+        collisionRect.set(dstRect)
+        collisionRect.inset(COLLISION_INSET, COLLISION_INSET)
     }
 
     companion object {
