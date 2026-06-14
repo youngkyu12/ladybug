@@ -1,18 +1,23 @@
 package com.example.ladybug.game.main
 
 import android.graphics.Canvas
+import android.graphics.RectF
 import android.view.MotionEvent
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.GyroscopeController
+import kr.ac.tukorea.ge.spgp2026.a2dg.objects.IBoxCollidable
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
 import com.example.ladybug.R
 
 class Player(
     val gctx: GameContext,
     private val gyroscopeController: GyroscopeController,
-) : Sprite(gctx, R.mipmap.ladybug_player) {
+) : Sprite(gctx, R.mipmap.ladybug_player), IBoxCollidable {
     private val speed = 550f
     private var rotationDegrees = 0f
+
+    override val collisionRect: RectF
+        get() = dstRect
 
     init {
         setCenterProportionalWidth(200f, 700f, 200f)
