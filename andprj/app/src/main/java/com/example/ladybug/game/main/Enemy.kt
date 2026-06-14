@@ -20,6 +20,8 @@ class Enemy(
     var level = 1
         private set
     private var speed = SPEED
+    val score: Int
+        get() = level * SCORE_PER_LEVEL
 
     fun init(
         x: Float,
@@ -68,6 +70,7 @@ class Enemy(
         const val SPEED = 240f
         const val MAX_LEVEL_COUNT = 20
         const val COLLISION_INSET = 40f
+        const val SCORE_PER_LEVEL = 10
 
         fun get(
             gctx: GameContext,

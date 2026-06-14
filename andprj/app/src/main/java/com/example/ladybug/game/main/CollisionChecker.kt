@@ -37,6 +37,7 @@ class CollisionChecker(private val gctx: GameContext) : IGameObject {
                     Log.d(javaClass.simpleName, "Collision !! Enemy(level=${enemy.level}, x=${enemy.x}) - Bullet(y=${bullet.y})")
                     scene.world.remove(bullet, MainScene.Layer.BULLET)
                     scene.world.remove(enemy, MainScene.Layer.ENEMY)
+                    scene.addScore(enemy.score)
                 }
             }
         }

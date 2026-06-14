@@ -20,6 +20,7 @@ class Bullet(
         x = startX
         y = startY
         syncDstRect()
+        updateCollisionRect()
         return this
     }
 
@@ -30,6 +31,7 @@ class Bullet(
         // 현재 Bullet 은 x 는 그대로 두고 y 만 감소시키며 위쪽으로 직진한다.
         y -= SPEED * gctx.frameTime
         syncDstRect()
+        updateCollisionRect()
 
         // 총알이 화면 위를 완전히 벗어나면 현재 Scene 의 BULLET layer 에서 제거한다.
         if (y + height / 2f < 0f) {
