@@ -69,7 +69,7 @@ class Enemy(
         const val ENEMY_HEIGHT = 180f
         const val SPEED = 240f
         const val MAX_LEVEL_COUNT = 20
-        const val COLLISION_INSET = 40f
+        const val COLLISION_INSET = 45f
         const val SCORE_PER_LEVEL = 10
 
         fun get(

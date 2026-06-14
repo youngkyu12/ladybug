@@ -16,6 +16,7 @@ class Player(
     private val _collisionRect = RectF()
     private val speed = 550f
     private var rotationDegrees = 0f
+    private var shotCoolTime = 0f
 
     override val collisionRect: RectF
         get() = _collisionRect
@@ -40,6 +41,7 @@ class Player(
         y = y.coerceIn(halfHeight, gctx.metrics.height - halfHeight)
         syncDstRect()
         updateCollisionRect()
+        updateShotCoolTime(gctx)
     }
 
     override fun draw(canvas: Canvas) {
@@ -50,13 +52,24 @@ class Player(
     }
 
     fun onTouchEvent(event: MotionEvent): Boolean {
-        // 총알이 실제로 보이는지 확인하기 위한 임시 단계이다.
-        // 자동 연사로 가기 전, 일단 ACTION_DOWN 때 Bullet 하나만 만들어 본다.
         if (event.action == MotionEvent.ACTION_DOWN) {
-            fireBullet()
+            fireBulletIfReady()
         }
 
         return true
+    }
+
+    private fun fireBulletIfReady() {
+        if (shotCoolTime > 0f) return
+
+        fireBullet()
+        shotCoolTime = SHOT_INTERVAL
+    }
+
+    private fun updateShotCoolTime(gctx: GameContext) {
+        if (shotCoolTime <= 0f) return
+        shotCoolTime -= gctx.frameTime
+        if (shotCoolTime < 0f) shotCoolTime = 0f
     }
 
     private fun fireBullet() {
@@ -71,7 +84,8 @@ class Player(
     }
 
     companion object {
-        const val COLLISION_INSET = 40f
+        const val COLLISION_INSET = 35f
         const val BULLET_OFFSET = 80f
+        const val SHOT_INTERVAL = 2.0f
     }
 }

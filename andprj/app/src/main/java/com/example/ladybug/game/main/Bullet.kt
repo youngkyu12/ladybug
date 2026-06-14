@@ -52,7 +52,7 @@ class Bullet(
         const val BULLET_WIDTH = 150f
         const val BULLET_HEIGHT = BULLET_WIDTH
         const val SPEED = 200f
-        const val COLLISION_INSET = 40f
+        const val COLLISION_INSET = 50f
 
         fun get(gctx: GameContext, x: Float, y: Float): Bullet {
             val scene = gctx.scene as? MainScene ?: return Bullet(gctx).init(x, y)
