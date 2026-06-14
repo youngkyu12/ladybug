@@ -76,7 +76,7 @@ class EnemyGenerator(
         val speed = Enemy.SPEED + (wave - 1) * SPEED_STEP
 
         scene.world.add(
-            Enemy(gctx, x, y, dx, dy, level = nextLevel, speed = speed),
+            Enemy.get(gctx, x, y, dx, dy, level = nextLevel, speed = speed),
             MainScene.Layer.ENEMY
         )
         nextLevel = if (nextLevel == Enemy.MAX_LEVEL_COUNT) 1 else nextLevel + 1
