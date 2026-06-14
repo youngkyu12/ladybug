@@ -26,7 +26,7 @@ class CollisionChecker(private val gctx: GameContext) : IGameObject {
 
             if (player.collidesWith(enemy)) {
                 Log.d(javaClass.simpleName, "Collision !! Player - Enemy(level=${enemy.level}, x=${enemy.x})")
-                gctx.sceneStack.popAll()
+                scene.gameOver()
                 return
             }
 

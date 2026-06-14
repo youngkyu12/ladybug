@@ -61,6 +61,10 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
         score += amount
     }
 
+    fun gameOver() {
+        GameOverScene(gctx, score, elapsedTimeText).change()
+    }
+
     override fun onEnter() {
         gyroscopeController.start()
     }
