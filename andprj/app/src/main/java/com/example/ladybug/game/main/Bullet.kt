@@ -43,9 +43,9 @@ class Bullet(
     }
 
     companion object {
-        const val BULLET_WIDTH = 68f
-        const val BULLET_HEIGHT = BULLET_WIDTH * 40f / 28f
-        const val SPEED = 20f
-        const val COLLISION_INSET = 20f
+        const val BULLET_WIDTH = 150f
+        const val BULLET_HEIGHT = BULLET_WIDTH
+        const val SPEED = 200f
+        const val COLLISION_INSET = 40f
     }
 }
