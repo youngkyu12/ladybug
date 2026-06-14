@@ -14,6 +14,7 @@ class Enemy(
     val level: Int = 1,
     private val speed: Float = SPEED
     ) : Sprite(gctx, R.mipmap.enemy) {
+    private val _collisionRect = RectF()
     override var width = ENEMY_WIDTH
     override var height = ENEMY_HEIGHT
     override var x = x
@@ -21,13 +22,11 @@ class Enemy(
 
     init {
         syncDstRect()
+        updateCollisionRect()
     }
 
     val collisionRect: RectF
-        get() {
-            syncDstRect()
-            return dstRect
-        }
+        get()  = _collisionRect
 
     override fun update(gctx: GameContext) {
         x += dx * speed * gctx.frameTime
@@ -40,6 +39,12 @@ class Enemy(
         }
 
         syncDstRect()
+        updateCollisionRect()
+    }
+
+    private fun updateCollisionRect() {
+        _collisionRect.set(dstRect)
+        _collisionRect.inset(COLLISION_INSET, COLLISION_INSET)
     }
 
     companion object {
@@ -47,5 +52,6 @@ class Enemy(
         const val ENEMY_HEIGHT = 180f
         const val SPEED = 240f
         const val MAX_LEVEL_COUNT = 20
+        const val COLLISION_INSET = 40f
     }
 }
