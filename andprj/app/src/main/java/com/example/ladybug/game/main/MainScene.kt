@@ -26,7 +26,7 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
     }
 
     override val world = World(Layer.entries.toTypedArray()).apply {
-        add(VertScrollBackground(gctx, R.mipmap.game_background, -100f), Layer.BACKGROUND)
+        add(VertScrollBackground(gctx, R.mipmap.game_background, 80f), Layer.BACKGROUND)
         add(player, Layer.PLAYER)
         add(enemyGenerator, Layer.CONTROLLER)
         add(collisionChecker, Layer.CONTROLLER)
