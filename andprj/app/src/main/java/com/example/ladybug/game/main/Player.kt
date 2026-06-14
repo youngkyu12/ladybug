@@ -13,14 +13,16 @@ class Player(
     val gctx: GameContext,
     private val gyroscopeController: GyroscopeController,
 ) : Sprite(gctx, R.mipmap.ladybug_player), IBoxCollidable {
+    private val _collisionRect = RectF()
     private val speed = 550f
     private var rotationDegrees = 0f
 
     override val collisionRect: RectF
-        get() = dstRect
+        get() = _collisionRect
 
     init {
         setCenterProportionalWidth(200f, 700f, 200f)
+        updateCollisionRect()
     }
 
     // 매 프레임 센서 입력값을 읽어 위치를 바꾼다.
@@ -37,6 +39,7 @@ class Player(
         x = x.coerceIn(halfWidth, gctx.metrics.width - halfWidth)
         y = y.coerceIn(halfHeight, gctx.metrics.height - halfHeight)
         syncDstRect()
+        updateCollisionRect()
     }
 
     override fun draw(canvas: Canvas) {
@@ -60,5 +63,14 @@ class Player(
         val scene = gctx.scene as? MainScene ?: return
         val bullet = Bullet(gctx, x, y)
         scene.world.add(bullet, MainScene.Layer.BULLET)
+    }
+
+    private fun updateCollisionRect() {
+        _collisionRect.set(dstRect)
+        _collisionRect.inset(COLLISION_INSET, COLLISION_INSET)
+    }
+
+    companion object {
+        const val COLLISION_INSET = 40f
     }
 }
