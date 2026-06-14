@@ -51,4 +51,9 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
     override fun onTouchEvent(event: MotionEvent): Boolean {
         return player.onTouchEvent(event)
     }
+
+    override fun onBackPressed(): Boolean {
+        PauseScene(gctx).push()
+        return true
+    }
 }
