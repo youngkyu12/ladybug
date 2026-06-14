@@ -21,7 +21,7 @@ class Player(
         get() = _collisionRect
 
     init {
-        setCenterProportionalWidth(200f, 700f, 200f)
+        setCenterProportionalWidth(400f, 1000f, 150f)
         updateCollisionRect()
     }
 
