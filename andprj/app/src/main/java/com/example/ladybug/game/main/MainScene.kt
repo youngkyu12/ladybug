@@ -45,4 +45,8 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
     override fun onResume() {
         gyroscopeController.start()
     }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        return player.onTouchEvent(event)
+    }
 }
