@@ -1,5 +1,6 @@
 package com.example.ladybug.game.main
 
+import android.graphics.Canvas
 import android.view.MotionEvent
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.GyroscopeController
@@ -11,6 +12,7 @@ class Player(
     private val gyroscopeController: GyroscopeController,
 ) : Sprite(gctx, R.mipmap.ladybug_player) {
     private val speed = 550f
+    private var rotationDegrees = 0f
 
     init {
         setCenterProportionalWidth(200f, 700f, 200f)
@@ -21,11 +23,22 @@ class Player(
         x += gyroscopeController.x * speed * gctx.frameTime
         y += gyroscopeController.y * speed * gctx.frameTime
 
+        if (gyroscopeController.power > 0f) {
+            rotationDegrees = Math.toDegrees(gyroscopeController.angle.toDouble()).toFloat() + 90f
+        }
+
         val halfWidth = width / 2f
         val halfHeight = height / 2f
         x = x.coerceIn(halfWidth, gctx.metrics.width - halfWidth)
         y = y.coerceIn(halfHeight, gctx.metrics.height - halfHeight)
         syncDstRect()
+    }
+
+    override fun draw(canvas: Canvas) {
+        canvas.save()
+        canvas.rotate(rotationDegrees, x, y)
+        super.draw(canvas)
+        canvas.restore()
     }
 
     fun onTouchEvent(event: MotionEvent): Boolean {
