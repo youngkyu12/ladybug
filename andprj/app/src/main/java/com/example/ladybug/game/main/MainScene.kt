@@ -15,6 +15,7 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
     val gyroscopeController = GyroscopeController(gctx)
     val player = Player(gctx, gyroscopeController)
     private val enemyGenerator = EnemyGenerator(gctx, player)
+    private val collisionChecker = CollisionChecker(gctx)
 
     enum class Layer {
         BACKGROUND,
@@ -28,6 +29,7 @@ class MainScene(gctx: GameContext) : Scene(gctx) {
         add(VertScrollBackground(gctx, R.mipmap.game_background, -100f), Layer.BACKGROUND)
         add(player, Layer.PLAYER)
         add(enemyGenerator, Layer.CONTROLLER)
+        add(collisionChecker, Layer.CONTROLLER)
     }
 
     override fun onEnter() {
