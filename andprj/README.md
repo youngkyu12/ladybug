@@ -88,8 +88,8 @@
   - [X] `CollisionChecker` 를 두고 `BULLET`, `ENEMY` 를 순회하기 시작
   - [X] `Bullet`, `Enemy` 가 충돌 범위를 제공
   - [X] 충돌이 있는지 실제로 체크
-  - [ ] 충돌 시 `Bullet` 삭제
-  - [ ] 충돌 시 `Enemy` 삭제
+  - [X] 충돌 시 `Bullet` 삭제
+  - [X] 충돌 시 `Enemy` 삭제
   - [ ] `dstRect` 와 `collisionRect` 는 다를 수 있음
   - [ ] `IBoxCollidable` 적용
 
