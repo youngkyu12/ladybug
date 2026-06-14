@@ -1,6 +1,8 @@
 package com.example.ladybug.game.main
 
 import android.graphics.Canvas
+import android.graphics.RectF
+import android.util.Log
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.IGameObject
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
 
@@ -18,9 +20,15 @@ class CollisionChecker(private val gctx: GameContext) : IGameObject {
             for (enemyObject in scene.world.objectsAt(MainScene.Layer.ENEMY)) {
                 val enemy = enemyObject as? Enemy ?: continue
 
-                // 지금 단계는 "누가 누구와 비교될지"만 잡는 commit 이다.
-                // 그래서 아직 bullet / enemy 를 실제로 사용하지 않고,
-                // 다음 단계에서 collisionRect, intersects, remove 로 이어질 준비만 한다.
+                if (RectF.intersects(bullet.collisionRect, enemy.collisionRect)) {
+                    Log.d(
+                        javaClass.simpleName,
+                        "Collision !! Enemy(level=${enemy.level}, x=${enemy.x}) - Bullet(y=${bullet.y})"
+                    )
+                    // 아래 코드로 삭제하려 시도하면 ConcurrentModificationError 가 발생한다.
+                    // scene.world.remove(bullet, MainScene.Layer.BULLET)
+                    // scene.world.remove(enemy, MainScene.Layer.ENEMY)
+                }
             }
         }
     }

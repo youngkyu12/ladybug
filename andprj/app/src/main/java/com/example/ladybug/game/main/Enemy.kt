@@ -3,7 +3,7 @@ package com.example.ladybug.game.main
 import com.example.ladybug.R
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
-import kotlin.collections.remove
+import android.graphics.RectF
 
 class Enemy(
     gctx: GameContext,
@@ -11,7 +11,7 @@ class Enemy(
     y: Float,
     private val dx: Float,
     private val dy: Float,
-    level: Int = 1,
+    val level: Int = 1,
     private val speed: Float = SPEED
     ) : Sprite(gctx, R.mipmap.enemy) {
     override var width = ENEMY_WIDTH
@@ -23,6 +23,11 @@ class Enemy(
         syncDstRect()
     }
 
+    val collisionRect: RectF
+        get() {
+            syncDstRect()
+            return dstRect
+        }
 
     override fun update(gctx: GameContext) {
         x += dx * speed * gctx.frameTime

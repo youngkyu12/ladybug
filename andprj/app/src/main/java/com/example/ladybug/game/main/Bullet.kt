@@ -3,6 +3,7 @@ package com.example.ladybug.game.main
 import com.example.ladybug.R
 import kr.ac.tukorea.ge.spgp2026.a2dg.objects.Sprite
 import kr.ac.tukorea.ge.spgp2026.a2dg.view.GameContext
+import android.graphics.RectF
 
 class Bullet(
     gctx: GameContext,
@@ -17,6 +18,12 @@ class Bullet(
     init {
         syncDstRect()
     }
+
+    val collisionRect: RectF
+        get() {
+            syncDstRect()
+            return dstRect
+        }
 
     override fun update(gctx: GameContext) {
         // 현재 Bullet 은 x 는 그대로 두고 y 만 감소시키며 위쪽으로 직진한다.
