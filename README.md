@@ -6,12 +6,12 @@
 |-----------------------|------------------------------------------------------------------------------------------------------------------|
 | 프로젝트 제목               | **Ladybug**                                                                                                      |
 | Git Repository        | [youngkyu12/ladybug](https://github.com/youngkyu12/ladybug)                                                      |
-| 3차 발표 영상              | [3차 발표 영상]()                                                                                                     |
+| 3차 발표 영상              | [3차 발표 영상](https://youtu.be/btw4gnpbLG4)                                                                                                     |
 | 2차 발표 영상              | [2차 발표 영상](https://youtu.be/c4JgwTX42bQ)                                                                         |
 | 1차 발표 영상              | [1차 발표 영상](https://youtu.be/jJiFIIa5MSA)                                                                         |
 | 1차 발표 때 버전의 README.md | [1차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/d4902d7634d96e7a3af38170f36b83d7a12ad3c0/README.md) |
 | 2차 발표 때 버전의 README.md | [2차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/92d02a080c0995b7c281f61397aa2bb031cf9eed/README.md) |
-| 3차 발표 때 버전의 README.md | [3차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/034961e4af14360e2515fc40125384bb0c12f12f/README.md) |
+| 3차 발표 때 버전의 README.md | [3차 발표 README.md](https://github.com/youngkyu12/ladybug/blob/351fa80ce510e1401474b00bc9963025e45b1afb/README.md) |
 | 개발 계획 체크 리스트          | [개발 계획 체크리스트](https://github.com/youngkyu12/ladybug/blob/main/andprj/README.md)                                  |
 
 ---
